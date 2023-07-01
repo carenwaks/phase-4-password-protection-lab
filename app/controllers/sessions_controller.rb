@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
         end
     end
 
+    
     def destroy 
         user  = User.find_by(username: params[:username]) 
         session[:user_id] = nil
